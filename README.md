@@ -35,20 +35,6 @@ gear-shop/
 5. Select Open with Live Server.
 6. Test the search, filters and navigation menu.
 
-## Screenshots
-
-### 1. Initial Product Display
-
-![Initial product display](screenshots/initial.png)
-
-### 2. Active Search and Category Filter
-
-![Search and filter combination](screenshots/search-filter.png)
-
-### 3. Navigation Menu Open
-
-![Navigation menu open](screenshots/menu-open.png)
-
 ## Why Event Delegation?
 
 Event delegation was required because all category filter buttons are managed through one parent container. Instead of attaching separate click listeners to every button, one listener on the parent handles clicks using event.target.closest().
