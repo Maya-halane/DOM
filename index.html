@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gear Shop | Outdoor Essentials</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="js/shop.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">GEAR<span>SHOP</span></a>
+        <button
+            id="menu-toggle"
+            class="menu-toggle"
+            aria-expanded="false"
+            aria-controls="navigation"
+            aria-label="Toggle navigation"
+        >
+            ☰ Menu
+        </button>
+        <nav id="navigation" hidden>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#products">Shop</a></li>
+                <li><a href="#footer">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+
+        <section class="hero">
+            <h1>Find Your Perfect Gear</h1>
+            <p>Quality essentials for your next adventure.</p>
+        </section>
+        <section class="shop-controls">
+
+            <label for="search">
+                Search products
+            </label>
+
+            <input
+                type="search"
+                id="search"
+                placeholder="Search for gear..."
+            >
+            <div id="filters" aria-label="Filter products by category">
+                <button
+                    type="button"
+                    class="filter-btn active"
+                    data-category="all"
+                    aria-pressed="true"
+                >
+                    All
+                </button>
+
+                <button
+                    type="button"
+                    class="filter-btn"
+                    data-category="clothing"
+                    aria-pressed="false"
+                >
+                    Clothing
+                </button>
+
+                <button
+                    type="button"
+                    class="filter-btn"
+                    data-category="gear"
+                    aria-pressed="false"
+                >
+                    Gear
+                </button>
+            </div>
+        </section>
+        <p id="count" aria-live="polite">
+            0 products shown
+        </p>
+        <section
+            id="products"
+            class="products-grid"
+            aria-label="Shop products"
+        >
+        </section>
+    </main>    
+    <footer id="footer">
+        <p>&copy; 2026 Gear Shop. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
+
